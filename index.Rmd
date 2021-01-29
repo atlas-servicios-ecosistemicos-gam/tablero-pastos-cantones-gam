@@ -101,14 +101,14 @@ leaflet() %>%
                   paste("Cobertura:", sf_metricas_cantones$sup__pasto, "%"), 
                   sep = ' - '
                   ),
-    group = "Pasto"
+    group = "Pastos"
   ) %>%
   addLegend(
     position = "bottomright",
     pal = pal_metrica,
     values = sf_metricas_cantones$sup_pasto,
     labFormat = function(type, cuts, p) {paste0(etiquetas_metrica)},
-    group = "Tierra cultivada",
+    group = "Pastos",
     title = "% de cobertura de pastos"
   ) %>% 
   addLayersControl(
